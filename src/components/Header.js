@@ -9,6 +9,7 @@ import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import Table from "react-bootstrap/esm/Table";
 import { DLT } from "../redux/actions/action";
+import LoginForm from "./LoginForm";
 
 const Header = () => {
   const [price, setPrice] = useState(0);
@@ -170,6 +171,7 @@ const Header = () => {
           )}
         </Menu>
       </Navbar>
+      <LoginForm />
     </>
   );
 };
